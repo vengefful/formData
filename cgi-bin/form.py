@@ -15,8 +15,6 @@ print ('<head>')
 print ('</head>')
 print ('<body>')
 #  print ('<h2>Hello World! This is my first CGI program</h2>')
-print ('</body>')
-print ('</html>')
 
 formData = cgi.FieldStorage()
 jsonData = formData.getvalue("foo")
@@ -44,9 +42,5 @@ except Exception as e:
     print('<font size="7"> Erro enviando resultados, por favor, reenvie!</font>')
 
 
-#  try:
-    #  with open("Testes.json", 'a+') as file:
-        #  json.dump(data, file, indent=2)
-    #  print("Resposta enviada")
-#  except Exception as e:
-    #  print(e)
+print ('</body>')
+print ('</html>')
