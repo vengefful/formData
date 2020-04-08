@@ -19,10 +19,12 @@ print('<font size="7">')
 formData = cgi.FieldStorage()
 jsonData = formData.getvalue("foo")
 data = json.loads(jsonData)
+acertos = 0
 
 for key in data:
     aluno = key
 
+lista = data[aluno]['Lista']
 filenameGab = '../listas/gabaritos/' + data[aluno]['Serie'] + '.json'
 filename = '../json/' + data[aluno]['Serie'] + 'Tests.json' 
 
@@ -30,8 +32,9 @@ with open(filenameGab) as file:
     gabarito = json.load(file)
 
 for k in data[aluno]:
-    print(k)
-
+    if data[aluno][k] == gabarito[lista][k]:
+        acertos += 1
+        print(acertos)
 
 try:
     with open(filename) as file:
