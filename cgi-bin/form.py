@@ -32,7 +32,7 @@ with open(filenameGab) as file:
     gabarito = json.load(file)
 
 for k in data[aluno]:
-    if data[aluno][k] == gabarito[lista][k]:
+    if(data[aluno][k] == gabarito[lista][k]):
         print(k)
         print(gabarito[lista][k])
         print(data[aluno][k])
@@ -41,6 +41,7 @@ for k in data[aluno]:
     else:
         pass
 
+print("OLA")
 try:
     with open(filename) as file:
         test = json.load(file)
