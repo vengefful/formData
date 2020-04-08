@@ -27,7 +27,7 @@ try:
     with open("../9Tests.json") as file:
         test = json.load(file)
         if aluno in test.keys():
-            print('<font size="7"> Não pode repetir o teste, seu professor ficará de olho em você</font>')
+            print('Não pode repetir o teste, seu professor ficará de olho em você')
         else:
             data.update(test)
             with open("../9ATests.json", 'w') as file:
