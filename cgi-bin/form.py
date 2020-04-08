@@ -11,11 +11,11 @@ cgitb.enable()
 print ("Content-type:text/html\r\n\r\n")
 print ('<html>')
 print ('<head>')
-print ('<title>Hello World - First CGI Program</title>')
+#  print ('<title>Hello World - First CGI Program</title>')
 print ('</head>')
 print ('<body>')
 #  print ('<h2>Hello World! This is my first CGI program</h2>')
-print('<font size="7">')
+print('<font size"7">')
 
 formData = cgi.FieldStorage()
 jsonData = formData.getvalue("foo")
@@ -28,19 +28,19 @@ try:
     with open("../9ATestes.json") as file:
         test = json.load(file)
         if aluno in test.keys():
-            print('<p>Não pode repetir o testeante!</p>')
+            print('SAFADINHO, TA REPETINDO O TESTE NE SAFADO!!!! TE  PEGUEI MANE</p>')
         else:
             data.update(test)
             with open("../9ATestes.json", 'w') as file:
                 json.dump(data, file, indent=2)
-            print("<p>Resposta enviada com sucesso</p>")
+            print("Resposta enviada com sucesso")
 except IOError:
     with open("../9ATestes.json", 'w') as file:
         json.dump(data, file, indent=2)
-    print("<p>Resposta enviada com sucesso!</p>")
+    print("Resposta enviada com sucesso!")
 except Exception as e:
     pass
-    print("<p>Erro enviando resultados, por favor, reenvie!</p>")
+    print("Erro enviando resultados, por favor, reenvie!")
 
 print('</font>')
 print ('</body>')
