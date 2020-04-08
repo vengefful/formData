@@ -33,9 +33,10 @@ with open(filenameGab) as file:
 
 for k in data[aluno]:
     print(k)
-    #  if data[aluno][k] == gabarito[lista][k]:
-        #  acertos += 1
-        #  print(acertos)
+    if data[aluno][k] == gabarito[lista][k]:
+        print(data[aluno][k])
+        acertos += 1
+        print(acertos)
 
 try:
     with open(filename) as file:
