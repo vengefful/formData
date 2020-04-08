@@ -29,10 +29,10 @@ try:
     with open("Testes.json") as file:
         test = json.load(file)
         if aluno in test.keys():
-            print('<font size="7"> SAFADINHO, TA REPETINDO O TESTE NE SAFADO!!!! TE  PEGUEI MANE</font>')
+            print('<font size="7"> Não pode repetir o teste, seu professor ficará de olho em você</font>')
         else:
             data.update(test)
-            with open("Testes.json", 'w') as file:
+            with open("../Testes.json", 'w') as file:
                 json.dump(data, file, indent=2)
             print('<font size="7"> Resposta enviada com sucesso</font>')
 except IOError:
