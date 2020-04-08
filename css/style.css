@@ -19,7 +19,7 @@ body {
   font-weight: 400;
   line-height: 1.4;
   color: var(--color-white);
-  margin: 0;
+  margin: 5%;
 }
 
 /* mobile friendly alternative to using background-attachment: fixed */
@@ -78,7 +78,7 @@ input{
 
 .container {
 
-  width: auto;
+  width: 100%;
   margin: 3.125rem auto 0 auto;
 }
 
