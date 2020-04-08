@@ -7,7 +7,7 @@ import json
 
 cgitb.enable()
 
-print("Content-Type: text/plain;charset=utf-8") # HTTP header to say HTML is following
+print("Content-Type: text/plain") # HTTP header to say HTML is following
 #  print()
 
 formData = cgi.FieldStorage()
