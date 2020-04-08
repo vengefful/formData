@@ -31,8 +31,8 @@ filename = '../json/' + data[aluno]['Serie'] + 'Tests.json'
 with open(filenameGab) as file:
     gabarito = json.load(file)
 
-for k in data[aluno]:
-    if(data[aluno][k] == gabarito[lista][k]):
+for k in range(len(data[aluno])):
+    if(data[aluno]['Q' + str(k+1)] == gabarito[lista]['Q' + str(k+1)]):
         print(k)
         print(gabarito[lista][k])
         print(data[aluno][k])
