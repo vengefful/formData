@@ -33,9 +33,9 @@ with open(filenameGab) as file:
 
 for k in range(4):
     if(data[aluno]['Q' + str(k+1)] == gabarito[lista]['Q' + str(k+1)]):
-        print(k)
-        print(gabarito[lista][k])
-        print(data[aluno][k])
+        #  print(k)
+        #  print(gabarito[lista][k])
+        #  print(data[aluno][k])
         acertos += 1
         print(acertos)
     else:
