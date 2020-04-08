@@ -40,7 +40,6 @@ except IOError:
         json.dump(data, file, indent=2)
     print("Resposta enviada com sucesso!")
 except Exception as e:
-    pass
     print("Erro enviando resultados, por favor, reenvie!")
 
 print('</font>')
