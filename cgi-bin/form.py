@@ -23,7 +23,7 @@ data = json.loads(jsonData)
 for key in data:
     aluno = key
 
-filename = '../' + data[aluno]['Serie'] + 'Tests.json' 
+filename = '../json/' + data[aluno]['Serie'] + 'Tests.json' 
 
 try:
     with open(filename) as file:
