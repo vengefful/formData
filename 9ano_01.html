@@ -106,6 +106,8 @@
   function SaveToFile() {
     var numberTest = document.getElementById('test').innerText;
     var matchNumberTest = /\d{2}/g.exec(numberTest);
+    var matchSerie = /\d{1}/g.exec(document.getElementById('serie').textContent);
+    alert(matchSerie[0]);
     var answer = {};
     var answersCorrect = {'Q1': 'B', 'Q2': 'A', 'Q3': 'A', 'Q4': 'E'};
     var AlunoAnswers = {};
