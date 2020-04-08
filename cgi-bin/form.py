@@ -15,6 +15,7 @@ print ('<head>')
 print ('</head>')
 print ('<body>')
 #  print ('<h2>Hello World! This is my first CGI program</h2>')
+print('<font size"7">')
 
 formData = cgi.FieldStorage()
 jsonData = formData.getvalue("foo")
@@ -27,7 +28,7 @@ try:
     with open("../9ATestes.json") as file:
         test = json.load(file)
         if aluno in test.keys():
-            print('>SAFADINHO, TA REPETINDO O TESTE NE SAFADO!!!! TE  PEGUEI MANE</p>')
+            print('SAFADINHO, TA REPETINDO O TESTE NE SAFADO!!!! TE  PEGUEI MANE</p>')
         else:
             data.update(test)
             with open("../9ATestes.json", 'w') as file:
@@ -41,7 +42,7 @@ except Exception as e:
     pass
     print("Erro enviando resultados, por favor, reenvie!")
 
-
+print('</font>')
 print ('</body>')
 print ('</html>')
 #  try:
