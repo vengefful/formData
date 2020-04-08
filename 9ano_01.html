@@ -107,13 +107,13 @@
     var numberTest = document.getElementById('test').innerText;
     var matchNumberTest = /\d{2}/g.exec(numberTest);
     var matchSerie = /\d{1}/g.exec(document.getElementById('serie').textContent);
-    alert(matchSerie[0]);
     var answer = {};
     var answersCorrect = {'Q1': 'B', 'Q2': 'A', 'Q3': 'A', 'Q4': 'E'};
     var AlunoAnswers = {};
     var nameAluno = document.getElementById("nameAluno").value;
     answer['Lista'] = matchNumberTest[0];
     answer['Acertos'] = 0;
+    answer['Serie'] = matchSerie;
     for (var i = 0; i < 4; i++) {
       var question = "questao0" + i.toString();
       var radios = document.getElementsByName(question);
