@@ -20,7 +20,7 @@ try:
     with open("Testes.json") as file:
         test = json.load(file)
         if aluno in test.keys():
-            print("<p style='fonte-size: 200px;>'SAFADINHO, TA REPETINDO O TESTE NE SAFADO!!!! TE  PEGUEI MANE</p>")
+            print("""<p style="fonte-size: 200px;">SAFADINHO, TA REPETINDO O TESTE NE SAFADO!!!! TE  PEGUEI MANE</p>""")
         else:
             data.update(test)
             with open("Testes.json", 'w') as file:
