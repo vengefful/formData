@@ -3,15 +3,6 @@
 import cgi
 import cgitb
 import json
-import sys
-import io
-
-def set_output_encoding(codec, errors='strict'):
-    sys.stdout = io.TextIOWrapper(
-        sys.stdout.detach(), errors=errors,
-        line_buffering=sys.stdout.line_buffering)
-
-set_output_encoding('utf8')
 
 cgitb.enable()
 
