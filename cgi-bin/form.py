@@ -15,7 +15,7 @@ print ('<head>')
 print ('</head>')
 print ('<body>')
 #  print ('<h2>Hello World! This is my first CGI program</h2>')
-print('<font size"7">')
+print('<font size="7">')
 
 formData = cgi.FieldStorage()
 jsonData = formData.getvalue("foo")
