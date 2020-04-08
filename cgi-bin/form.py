@@ -33,7 +33,6 @@ with open(filenameGab) as file:
 
 for k in data[aluno]:
     print(k)
-    print(k.values)
     #  if data[aluno][k] == gabarito[lista][k]:
         #  acertos += 1
         #  print(acertos)
