@@ -44,9 +44,3 @@ except Exception as e:
 print('</font>')
 print ('</body>')
 print ('</html>')
-#  try:
-    #  with open("Testes.json", 'a+') as file:
-        #  json.dump(data, file, indent=2)
-    #  print("Resposta enviada")
-#  except Exception as e:
-    #  print(e)
