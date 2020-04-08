@@ -38,6 +38,8 @@ for k in data[aluno]:
         print(data[aluno][k])
         acertos += 1
         print(acertos)
+    else:
+        pass
 
 try:
     with open(filename) as file:
