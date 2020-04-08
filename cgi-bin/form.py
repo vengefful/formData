@@ -23,18 +23,20 @@ data = json.loads(jsonData)
 for key in data:
     aluno = key
 
+filename = f"../{aluno['Serie']}Test.json"
+
 try:
-    with open("../9ATestes.json") as file:
+    with open(filename) as file:
         test = json.load(file)
         if aluno in test.keys():
             print('<p>Pode enviar apenas uma resposta</p>')
         else:
             data.update(test)
-            with open("../9ATestes.json", 'w') as file:
+            with open(filename, 'w') as file:
                 json.dump(data, file, indent=2)
             print("Resposta enviada com sucesso")
 except IOError:
-    with open("../9ATestes.json", 'w') as file:
+    with open(filename, 'w') as file:
         json.dump(data, file, indent=2)
     print("Resposta enviada com sucesso!")
 except Exception as e:
