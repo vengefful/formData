@@ -21,20 +21,20 @@ jsonData = formData.getvalue("foo")
 data = json.loads(jsonData)
 
 for aluno in data:
-    filename = f"{aluno['Serie']}Test.json"
+    filename = '../' + aluno['Serie'] + 'Test.json' 
 
 try:
-    with open(f"../{filename}") as file:
+    with open(filename) as file:
         test = json.load(file)
         if aluno in test.keys():
             print('<p>Pode enviar apenas uma resposta</p>')
         else:
             data.update(test)
-            with open(f"../{filename}", 'w') as file:
+            with open(filename, 'w') as file:
                 json.dump(data, file, indent=2)
             print("Resposta enviada com sucesso")
 except IOError:
-    with open(f"../{filename}", 'w') as file:
+    with open(filename, 'w') as file:
         json.dump(data, file, indent=2)
     print("Resposta enviada com sucesso!")
 except Exception as e:
