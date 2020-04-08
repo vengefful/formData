@@ -29,7 +29,7 @@ filename = '../json/' + data[aluno]['Serie'] + 'Tests.json'
 with open(filenameGab) as file:
     gabarito = json.load(file)
 
-for k in aluno:
+for k in data[aluno]:
     print(k)
 
 
