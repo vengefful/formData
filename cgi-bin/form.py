@@ -27,7 +27,7 @@ try:
     with open("../9ATestes.json") as file:
         test = json.load(file)
         if aluno in test.keys():
-            print('<pPode enviar apenas uma resposta</p>')
+            print('<p>Pode enviar apenas uma resposta</p>')
         else:
             data.update(test)
             with open("../9ATestes.json", 'w') as file:
