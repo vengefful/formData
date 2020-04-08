@@ -8,7 +8,6 @@ import json
 cgitb.enable()
 
 print("Content-Type: text/plain\n\n") # HTTP header to say HTML is following
-print("TESTANDO")
 
 formData = cgi.FieldStorage()
 jsonData = formData.getvalue("foo")
@@ -21,20 +20,19 @@ try:
     with open("Testes.json") as file:
         test = json.load(file)
         if aluno in test.keys():
-            pass
-            #  print("SAFADINHO, TA REPETINDO O TESTE NE SAFADO!!!! TE  PEGUEI MANE")
+            print("SAFADINHO, TA REPETINDO O TESTE NE SAFADO!!!! TE  PEGUEI MANE")
         else:
             data.update(test)
             with open("Testes.json", 'w') as file:
                 json.dump(data, file, indent=2)
-            #  print("Resposta enviada com sucesso")
+            print("Resposta enviada com sucesso")
 except IOError:
     with open("Testes.json", 'w') as file:
         json.dump(data, file, indent=2)
-    #  print("Resposta enviada com sucesso!")
+    print("Resposta enviada com sucesso!")
 except Exception as e:
     pass
-    #  print("Erro enviando resultados, por favor, reenvie!")
+    print("Erro enviando resultados, por favor, reenvie!")
 
 
 #  try:
