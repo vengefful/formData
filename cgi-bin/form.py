@@ -28,7 +28,7 @@ try:
     with open("../9ATestes.json") as file:
         test = json.load(file)
         if aluno in test.keys():
-            print('<p>TA REPETINDO O TESTE</p>')
+            print('<p>TA REPETINDO O TESTE. TESTE NÃO ACEITO</p>')
         else:
             data.update(test)
             with open("../9ATestes.json", 'w') as file:
