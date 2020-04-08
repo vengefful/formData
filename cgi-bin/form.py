@@ -21,7 +21,7 @@ jsonData = formData.getvalue("foo")
 data = json.loads(jsonData)
 
 for aluno in data:
-    filename = '../' + aluno['Serie'] + 'Test.json' 
+    filename = '../' + str(aluno['Serie']) + 'Test.json' 
 
 try:
     with open(filename) as file:
