@@ -2,21 +2,13 @@
  
 import cgi
 import cgitb
-import json 
-import sys
-import io
-
-def set_output_encoding(codec, errors='strict'):
-    sys.stdout = io.TextIOWrapper(
-        sys.stdout.detach(), errors=errors,
-        line_buffering=sys.stdout.line_buffering)
-
-set_output_encoding('utf8')
+import requests
+import json
 
 cgitb.enable()
 
 #  print("Content-Type: text/plain\n\n") # HTTP header to say HTML is following
-print ("Content-type:text/html;charset=utf-8\r\n\r\n")
+print ("Content-type:text/html\r\n\r\n")
 print ('<html>')
 print ('<head>')
 #  print ('<title>Hello World - First CGI Program</title>')
