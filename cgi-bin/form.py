@@ -15,9 +15,8 @@ print ('<head>')
 print ('</head>')
 print ('<body>')
 #  print ('<h2>Hello World! This is my first CGI program</h2>')
-print ('</body size="7">')
+print ('</body>')
 print ('</html>')
-print('<p> TESTANDO </p>')
 
 formData = cgi.FieldStorage()
 jsonData = formData.getvalue("foo")
@@ -30,7 +29,7 @@ try:
     with open("Testes.json") as file:
         test = json.load(file)
         if aluno in test.keys():
-            print('>SAFADINHO, TA REPETINDO O TESTE NE SAFADO!!!! TE  PEGUEI MANE</p>')
+            print('<p font="7"> SAFADINHO, TA REPETINDO O TESTE NE SAFADO!!!! TE  PEGUEI MANE</p>')
         else:
             data.update(test)
             with open("Testes.json", 'w') as file:
