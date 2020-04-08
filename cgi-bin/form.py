@@ -24,17 +24,17 @@ for key in data:
     aluno = key
 
 try:
-    with open("Testes.json") as file:
+    with open("../9ATestes.json") as file:
         test = json.load(file)
         if aluno in test.keys():
             print('>SAFADINHO, TA REPETINDO O TESTE NE SAFADO!!!! TE  PEGUEI MANE</p>')
         else:
             data.update(test)
-            with open("Testes.json", 'w') as file:
+            with open("../9ATestes.json", 'w') as file:
                 json.dump(data, file, indent=2)
             print("Resposta enviada com sucesso")
 except IOError:
-    with open("Testes.json", 'w') as file:
+    with open("../9ATestes.json", 'w') as file:
         json.dump(data, file, indent=2)
     print("Resposta enviada com sucesso!")
 except Exception as e:
