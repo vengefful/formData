@@ -7,7 +7,7 @@ import json
 cgitb.enable()
 
 #  print("Content-Type: text/plain\n\n") # HTTP header to say HTML is following
-print ('Content-type:text/html;charset="UTF-8"\r\n\r\n')
+print ("Content-type:text/html\r\n\r\n")
 print ('<html>')
 print ('<head>')
 #  print ('<title>Hello World - First CGI Program</title>')
@@ -27,7 +27,7 @@ try:
     with open("../9ATestes.json") as file:
         test = json.load(file)
         if aluno in test.keys():
-            print('<p>áREPETINDO O TESTE.</p>')
+            print('<pPode enviar apenas uma resposta</p>')
         else:
             data.update(test)
             with open("../9ATestes.json", 'w') as file:
