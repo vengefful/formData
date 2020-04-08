@@ -14,7 +14,7 @@ print ('<head>')
 #  print ('<title>Hello World - First CGI Program</title>')
 print ('</head>')
 print ('<body>')
-print ('<h2>Hello World! This is my first CGI program</h2>')
+#  print ('<h2>Hello World! This is my first CGI program</h2>')
 print ('</body>')
 print ('</html>')
 
@@ -26,21 +26,27 @@ for key in data:
     aluno = key
 
 try:
-    with open("9Tests.json") as file:
+    with open("Testes.json") as file:
         test = json.load(file)
         if aluno in test.keys():
-            print('Não pode repetir o teste, seu professor ficará de olho em você')
+            print('>SAFADINHO, TA REPETINDO O TESTE NE SAFADO!!!! TE  PEGUEI MANE</p>')
         else:
             data.update(test)
-            with open("9ATests.json", 'w') as file:
+            with open("Testes.json", 'w') as file:
                 json.dump(data, file, indent=2)
-            print('Resposta enviada com sucesso')
+            print("Resposta enviada com sucesso")
 except IOError:
-    with open("9Tests.json", 'w') as file:
+    with open("Testes.json", 'w') as file:
         json.dump(data, file, indent=2)
-    print('Resposta enviada com sucesso!')
+    print("Resposta enviada com sucesso!")
 except Exception as e:
     pass
-    print('Erro enviando resultados, por favor, reenvie!')
+    print("Erro enviando resultados, por favor, reenvie!")
 
 
+#  try:
+    #  with open("Testes.json", 'a+') as file:
+        #  json.dump(data, file, indent=2)
+    #  print("Resposta enviada")
+#  except Exception as e:
+    #  print(e)
