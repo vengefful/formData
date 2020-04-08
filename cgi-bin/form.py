@@ -28,19 +28,19 @@ try:
     with open("../9ATestes.json") as file:
         test = json.load(file)
         if aluno in test.keys():
-            print('Não pode repetir o teste, Fernando estará de olho em você de agora em diante!</p>')
+            print('<p>Não pode repetir o teste, Fernando estará de olho em você de agora em diante!</p>')
         else:
             data.update(test)
             with open("../9ATestes.json", 'w') as file:
                 json.dump(data, file, indent=2)
-            print("Resposta enviada com sucesso")
+            print("<p>Resposta enviada com sucesso</p>")
 except IOError:
     with open("../9ATestes.json", 'w') as file:
         json.dump(data, file, indent=2)
-    print("Resposta enviada com sucesso!")
+    print("<p>Resposta enviada com sucesso!</p>")
 except Exception as e:
     pass
-    print("Erro enviando resultados, por favor, reenvie!")
+    print("<p>Erro enviando resultados, por favor, reenvie!</p>")
 
 print('</font>')
 print ('</body>')
