@@ -35,6 +35,7 @@ for k in data[aluno]:
     if data[aluno][k] == gabarito[lista][k]:
         print(k)
         print(gabarito[lista][k])
+        print(data[aluno][k])
         acertos += 1
         print(acertos)
 
