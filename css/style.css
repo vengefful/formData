@@ -77,7 +77,8 @@ input{
 }
 
 .container {
-  width: 100%;
+
+  width: auto;
   margin: 3.125rem auto 0 auto;
 }
 
