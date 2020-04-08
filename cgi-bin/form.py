@@ -32,14 +32,14 @@ try:
             data.update(test)
             with open("../9ATests.json", 'w') as file:
                 json.dump(data, file, indent=2)
-            print('<font size="7"> Resposta enviada com sucesso</font>')
+            print('Resposta enviada com sucesso')
 except IOError:
     with open("../9Tests.json", 'w') as file:
         json.dump(data, file, indent=2)
-    print('<font size="7"> Resposta enviada com sucesso!</font>')
+    print('Resposta enviada com sucesso!')
 except Exception as e:
     pass
-    print('<font size="7"> Erro enviando resultados, por favor, reenvie!</font>')
+    print('Erro enviando resultados, por favor, reenvie!')
 
 
 print ('</body>')
