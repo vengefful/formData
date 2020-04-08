@@ -17,7 +17,7 @@ print ('<body>')
 #  print ('<h2>Hello World! This is my first CGI program</h2>')
 print ('</body>')
 print ('</html>')
-print('<p style="fonte-size: 100px;">')
+print('<p style="fonte-size: 500px;">')
 print('TESTANDO')
 print('</p>')
 
