@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <title>Lista de Matemática</title>
+</head>
+<div class="container">
+  <header>
+    <h1 id="test" class="text-center">Lista de Matemática 01</h1>
+  </header>
+
+  <body>
+    <p>Atividade relacionada ao conteúdo do Conjunto dos Números Inteiros.
+      O conteúdo encontra-se da página 03 à 30 no livro Aprimorando Saber (Livro de reforço).</p>
+    <p>Mais informações sobre o tema nos links abaixo:</p>
+    <!-- <object width="425" height="344" data="https://www.youtube.com/embed/N4koEPJ0bjU"></object> -->
+    <!-- <p><a href="pdfs/potenciacao.pdf" target="_blank" rel="noopener noreferrer">Apostila de Portenciação</a></p> -->
+    <p><a href="https://www.youtube.com/watch?v=Jf0sA3wBqXE" target="_blank" rel="noopener noreferrer">Video 01</a></p>
+    <p><a href="https://www.youtube.com/watch?v=3VgUT8CRTdc" target="_blank" rel="noopener noreferrer">Video 02</a></p>
+    <form action="cgi-bin/form.py" method="POST">
+      <div id="header_form" class="form-group">
+        <label id="name-label " for="name">Name*</label>
+        <div id="obrigatorio">* Campo obrigatório</div>
+        <input type="text" id="nameAluno" placeholder="Seu nome" required>
+        <label id="labe-date" for="date">Data de Nascimento</label>
+        <input type="date">
+        <label id="label-gender" for="gender">Gênero</label>
+        <p><input type="radio" class="input-radio" name="gender" value="masc">Masculino
+          <input type="radio" class="input-radio" name="gender" value="fem">Feminino
+          <input type="radio" class="input-radio" name="gender" value="other">Outro</p>
+      </div>
+      <div class="form-group">
+        <h2>Questão 01* <span>2,5 pontos</span></h2>
+        <!-- Primeira Questao -->
+        <p>
+          Em uma gincana de matemática na escola, o aluno participante ganhava 20 pontos por acerto e perdia 22 pontos
+          por erro. De 100 perguntas, Ana acertou 52. Ela ganhou ou perdeu quantos pontos nessa gincana?
+        </p>
+        <label><input type="radio" id="0101" class="input-radio" name="questao00" value="A" required>Ganhou 16</label>
+        <label><input type="radio" id="0102" class="input-radio" name="questao00" value="B" required>Perdeu 16</label>
+        <label><input type="radio" id="0103" class="input-radio" name="questao00" value="C" required>Não Ganhou e nem
+          perdeu</label>
+        <label><input type="radio" id="0104" class="input-radio" name="questao00" value="D" required>Ganhou 12</label>
+        <label><input type="radio" id="0105" class="input-radio" name="questao00" value="E" required>Perdeu 12</label>
+      </div>
+      <div class="form-group">
+        <h2>Questão 02* <span>2,5 pontos</span></h2>
+        <!-- Segunda Questao -->
+        <p>
+          Em minha conta no banco, eu estava com um saldo de R$ 520,00 negativos. Depositei R$ 1810,00, mas logo em
+          seguida paguei algumas contas: R$ 765,00 no aluguel e R$ 237,00 no supermercado. Depois que as contas foram
+          pagas, qual será meu saldo?
+        </p>
+        <label><input type="radio" id="0201" class="input-radio" name="questao01" value="A" required>R$ 322,00</label>
+        <label><input type="radio" id="0202" class="input-radio" name="questao01" value="B" required>R$ 278,00</label>
+        <label><input type="radio" id="0203" class="input-radio" name="questao01" value="C" required>R$ 288,00</label>
+        <label><input type="radio" id="0204" class="input-radio" name="questao01" value="D" required>R$ 268,00</label>
+        <label><input type="radio" id="0205" class="input-radio" name="questao01" value="E" required>R$ 318,00</label>
+      </div>
+
+      <div class="form-group">
+        <h2>Questão 03* <span>2,5 pontos</span></h2>
+        <!-- Terceira Questao -->
+        <p>
+          Um avião partiu de um aeroporto situado 600 metros acima do nível do mar, comtempo bom e temperatura de 28°C.
+          Ao atingir a altitude máxima, de 3300 metros acima do nível do mar, o piloto avisou que a temperatura externa
+          era de -40°C. Da decolagem até o momento em que foi atingida a altitude máxima, quantos graus abaixou a
+          temperatura?
+        </p>
+        <label><input type="radio" id="0301" class="input-radio" name="questao02" value="A" required>Diminuiu
+          12\(circ\)</label>
+        <label><input type="radio" id="0302" class="input-radio" name="questao02" value="B" required>Diminuiu
+          40\(circ\)</label>
+        <label><input type="radio" id="0303" class="input-radio" name="questao02" value="C" required>Diminuiu
+          68\(circ\)</label>
+        <label><input type="radio" id="0304" class="input-radio" name="questao02" value="D" required>Diminuiu
+          78\(circ\)</label>
+        <label><input type="radio" id="0305" class="input-radio" name="questao02" value="E" required>Diminuiu
+          88\(circ\)</label>
+      </div>
+
+      <div class="form-group">
+        <h2>Questão 04* <span>2,5 pontos</span></h2>
+        <!-- Quarta Questao -->
+        <p>
+          Uma formiga faz o seguinte percurso sobre uma reta numerada: “A partir do zero, ela caminha cinco unidades no
+          sentido positivo e em seguida anda sete unidades no sentido negativo. Determine o ponto em que se encontra a
+          formiga após esse percurso.”
+        </p>
+        <label><input type="radio" id="0401" class="input-radio" name="questao03" value="A" required>No ponto 2</label>
+        <label><input type="radio" id="0402" class="input-radio" name="questao03" value="B" required>No ponto 3</label>
+        <label><input type="radio" id="0403" class="input-radio" name="questao03" value="C" required>No ponto 0</label>
+        <label><input type="radio" id="0404" class="input-radio" name="questao03" value="D" required>No ponto -2</label>
+        <label><input type="radio" id="0405" class="input-radio" name="questao03" value="E" required>No ponto -3</label>
+      </div>
+
+      <input type="hidden" name="foo" id="foo">
+
+      <input type="submit" class="submit-button" id="submitButton" value="Enviar" onclick="SaveToFile()">
+    </form>
+  </body>
+</div>
+
+<script>
+  function SaveToFile() {
+    var numberTest = document.getElementById('test').innerText;
+    var matchNumberTest = /\d{2}/g.exec(numberTest);
+    var answer = {};
+    var answersCorrect = {'Q1': 'B', 'Q2': 'C', 'Q3': 'C', 'Q4': 'D'};
+    var AlunoAnswers = {};
+    var nameAluno = document.getElementById("nameAluno").value;
+    answer['Lista'] = matchNumberTest[0];
+    answer['Acertos'] = 0;
+    for (var i = 0; i < 4; i++) {
+      var question = "questao0" + i.toString();
+      var radios = document.getElementsByName(question);
+      for (var j = 0, length = radios.length; j < length; j++) {
+        if (radios[j].checked) {
+          if (radios[j].value == answersCorrect['Q' + (i + 1).toString()]) {
+            answer['Acertos'] += 1;
+          }
+          answer['Q' + (i + 1).toString()] = radios[j].value;
+        };
+      }
+    }
+    AlunoAnswers[nameAluno] = answer;
+    json = JSON.stringify(AlunoAnswers);
+    document.getElementById("foo").value = json;
+  }
+</script>
+
+</html>
