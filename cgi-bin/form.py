@@ -8,7 +8,6 @@ import json
 cgitb.enable()
 
 print("Content-Type: text/html; charset=utf-8") # HTTP header to say HTML is following
-print("<b>Hello python</b>")
 
 formData = cgi.FieldStorage()
 jsonData = formData.getvalue("foo")
