@@ -23,7 +23,7 @@ data = json.loads(jsonData)
 for key in data:
     aluno = key
 
-filename = f"../{aluno['Serie']}Test.json"
+filename = f"{aluno['Serie']}Test.json"
 
 try:
     with open(filename) as file:
