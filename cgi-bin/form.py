@@ -26,7 +26,7 @@ for key in data:
 
 lista = data[aluno]['Lista']
 filenameGab = '../listas/gabaritos/' + data[aluno]['Serie'] + '.json'
-filename = '../json/' + data[aluno]['Serie'] + 'Tests.json' 
+filename = '../json/' + data[aluno]['Serie'] + lista + 'Tests.json' 
 
 with open(filenameGab) as file:
     gabarito = json.load(file)
