@@ -16,9 +16,6 @@ html_header = """<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Matemática</title>
     </head>
-    <header>
-        <h1 id="test" class="text-center">Lista de Matemática - Acertos</h1>
-    </header>
 
     <body>\n"""
 
@@ -52,6 +49,7 @@ for filename in basename:
     else:
         j = 0
     print(j)
+    html[j] += f"<h1>Lista de Matemática - {lista}: Acertos</h1>\n"
     html[j] += data.to_html()
 
     acerto = {'Acertos': [0, 0, 0, 0, 0]}
@@ -73,12 +71,11 @@ for filename in basename:
     
     plt.savefig(nameFigFile)
 
-    html[j] += """\n<img src="{0}" alt="graph" height="50%" width="50%">""".format(nameFigFile)
+    html[j] += """\n<img src="{0}" alt="graph" height="50%" width="50%">""".format('../' + nameFigFile)
     i += 1
 
 for k in range(len(html)):
     html[k] += """\n</body></html>\n"""
+    with open(nameHtmlFile[k], 'w') as f:
+        f.write(html[k].format('../'+ nameFigFile))
     
-for k in range(i):    
-    with open(nameHtmlFile, 'w') as f:
-        f.write(html[2].format('../'+ nameFigFile))
