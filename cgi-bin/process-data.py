@@ -70,12 +70,12 @@ for filename in basename:
             acerto['Acertos'][4] += 1
 
     df = pd.DataFrame(acerto,columns=['Acertos'],index = ['0 acertos','1 acerto','2 acertos','3 acertos','4 acertos'])
-    df.plot.pie(subplots=True, figsize=(9, 9),autopct='%1.1f%%', startangle=0)
+    df.plot.pie(subplots=True, figsize=(12, 12),autopct='%1.1f%%', startangle=0)
     plt.title('Gráfico de Acertos')
     
     plt.savefig(nameFigFile)
 
-    html[j] += """\n<img src="{0}" alt="graph" height="50%" width="50%">""".format('../' + nameFigFile)
+    html[j] += """\n<img src="{0}" alt="graph" height="100%" width="100%">""".format('../' + nameFigFile)
     i += 1
 
 for k in range(len(html)):
