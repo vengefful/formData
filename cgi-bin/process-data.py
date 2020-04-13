@@ -26,6 +26,9 @@ for files in os.listdir(json_folder):
 html[0] = html_header
 html[1] = html_header
 html[2] = html_header
+nameHtmlFile.append(os.path.join(acertos_folder, '6.html'))
+nameHtmlFile.append(os.path.join(acertos_folder, '7.html'))
+nameHtmlFile.append(os.path.join(acertos_folder, '9.html'))
 
 i = 0
 for filename in basename:
@@ -40,7 +43,7 @@ for filename in basename:
     del data['Serie']
     data = data.sort_values('Acertos', ascending=False)
 
-    nameHtmlFile.append(os.path.join(acertos_folder, serie) + '.html')
+    
     nameFigFile = os.path.join(img_folder, base) + '.png'
 
     if(serie == '9'):
