@@ -3,13 +3,7 @@
 import cgi
 import cgitb
 import json
-# from pushnotifier import PushNotifier as pn
 
-""" pn = pn.PushNotifier('vengefful', 'lingua', 'Automation', 'D4DD52VB63CVV75B696VBV46696VV2VBTTFBKFBFBF')
-
-def SendNotificationToIphoneX(data):
-    fdata = f"{data['serie']} serie - lista {data['lista']} - {data['name']}\nRespondeu a atividade"
-    pn.send_text(fdata, silent=False, devices=['Q1W5']) """
 
 cgitb.enable()
 
@@ -52,7 +46,6 @@ try:
             print('<p>Pode enviar apenas uma resposta</p>')
         else:
             tmpData = {'name': aluno, 'serie': data[aluno]['Serie'], 'lista': data[aluno]['Lista']}
-            SendNotificationToIphoneX(tmpData)
             data.update(test)
             with open(filename, 'w') as file:
                 json.dump(data, file, indent=2)
