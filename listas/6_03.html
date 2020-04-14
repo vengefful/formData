@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <script src="../js/SaveToFile.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <title>Lista de Matemática sexto ano</title>
+</head>
+<div class="container">
+  <header>
+    <h1 id="test" class="text-center">Lista de Matemática 03</h1>
+  </header>
+
+  <body>
+    <p class="text-center" id="serie">Série - 6\(^{\circ}\) ano do ensino fundamental II</p>
+    <p>
+      Atividade relacionada ao conteúdo de sequência numérica dos números naturais.
+    </p>
+    <p>Mais informações sobre o tema nos links abaixo:</p>
+    <!-- <object width="425" height="344" data="https://www.youtube.com/embed/N4koEPJ0bjU"></object> -->
+    <!-- <p><a -->
+    <!-- href="https://matematicauniban.files.wordpress.com/2012/04/metodologia-ef-3-conjunto-dos-nc3bameros-inteiros.pdf" -->
+    <!-- target="_blank" rel="noopener noreferrer">Apostila de Portenciação</a></p> -->
+    <p><a href="https://www.youtube.com/watch?v=zgbeiPutdn8" target="_blank" rel="noopener noreferrer">Vídeo 01</a></p>
+    <p><a href="https://www.youtube.com/watch?v=8Z_xmy94gz4" target="_blank" rel="noopener noreferrer">Vídeo 02</a></p>
+    <form action="../cgi-bin/form.py" method="POST">
+      <div id="header_form" class="form-group">
+        <label id="name-label " for="name">Name*</label>
+        <div id="obrigatorio">* Campo obrigatório</div>
+        <input type="text" id="nameAluno" placeholder="Seu nome" required>
+        <!-- <label id="labe-date" for="date">Data de Nascimento</label>
+        <input type="date"> -->
+        <label id="label-gender" for="gender">Gênero</label>
+        <p><input type="radio" class="input-radio" name="gender" value="masc">Masculino
+          <input type="radio" class="input-radio" name="gender" value="fem">Feminino
+          <input type="radio" class="input-radio" name="gender" value="other">Outro</p>
+      </div>
+      <div class="form-group">
+        <h2>Questão 01* <span>2,5 pontos</span></h2>
+        <!-- Primeira Questao -->
+        <p>
+          Maria quer inovar em sua loja de embalagens e decidiu vender caixas com diferentes formatos. Nas imagens
+          apresentadas estão as planificações dessas caixas.
+        </p>
+        <img src="../img/603_01.png" alt="">
+        <p>
+          Quais serão os sólidos geométricos que Maria obterá a partir dessas planificações?
+        </p>
+        <label><input type="radio" id="0101" class="input-radio" name="questao00" value="A" required>Cilindro, prisma de
+          base pentagonal e pirâmide.</label>
+        <label><input type="radio" id="0102" class="input-radio" name="questao00" value="B" required>Cone, prisma de
+          base pentagonal e pirâmide.</label>
+        <label><input type="radio" id="0103" class="input-radio" name="questao00" value="C" required>Cone, tronco de
+          pirâmide e pirâmide.</label>
+        <label><input type="radio" id="0104" class="input-radio" name="questao00" value="D" required>Cilindro, tronco de
+          pirâmide e prisma.</label>
+        <label><input type="radio" id="0105" class="input-radio" name="questao00" value="E" required>Cilindro, prisma e
+          tronco de cone.</label>
+      </div>
+      <div class="form-group">
+        <h2>Questão 02* <span>2,5 pontos</span></h2>
+        <!-- Segunda Questao -->
+        <p>
+          Qual a medida do volume de um cilindro sabendo que sua altura é de 5 cm e a área da base vale \(25 cm^2\)?
+        </p>
+        <!-- <img src="../img/602_02.png" alt=""> -->
+        <p>
+          Quantos traços são necessários para a construção que tem 15 pontos?
+        </p>
+        <label><input type="radio" id="0201" class="input-radio" name="questao01" value="A" required>\(125
+          cm^2\)</label>
+        <label><input type="radio" id="0202" class="input-radio" name="questao01" value="B" required>\(100
+          cm^2\)</label>
+        <label><input type="radio" id="0203" class="input-radio" name="questao01" value="C" required>\(75
+          cm^2\)</label>
+        <label><input type="radio" id="0204" class="input-radio" name="questao01" value="D" required>\(50
+          cm^2\)</label>
+        <label><input type="radio" id="0205" class="input-radio" name="questao01" value="E" required>\(150
+          cm^2\)</label>
+      </div>
+
+      <div class="form-group">
+        <h2>Questão 03* <span>2,5 pontos</span></h2>
+        <!-- Terceira Questao -->
+        <p>
+          Um cubo é formado por quantas faces?
+        </p>
+        <p>
+          Qual é o termo de ordem 10?
+        </p>
+        <label><input type="radio" id="0301" class="input-radio" name="questao02" value="A" required>4</label>
+        <label><input type="radio" id="0302" class="input-radio" name="questao02" value="B" required>10
+        </label>
+        <label><input type="radio" id="0303" class="input-radio" name="questao02" value="C" required>6
+        </label>
+        <label><input type="radio" id="0304" class="input-radio" name="questao02" value="D" required>8
+        </label>
+        <label><input type="radio" id="0305" class="input-radio" name="questao02" value="E" required>12
+        </label>
+      </div>
+
+      <div class="form-group">
+        <h2>Questão 04* <span>2,5 pontos</span></h2>
+        <!-- Quarta Questao -->
+        <p>
+          No desenho abaixo aparece um objeto comum em todas as casas, afinal, é com a panela que fazemos a comida do
+          dia a dia.
+        </p>
+        <img src="../img/603_02.jpg" alt="">
+        <p>Qual é a forma geométrica que aparece no desenho?</p>
+        <label><input type="radio" id="0401" class="input-radio" name="questao03" value="A" required>Cone</label>
+        <label><input type="radio" id="0402" class="input-radio" name="questao03" value="B" required>Cilindro</label>
+        <label><input type="radio" id="0403" class="input-radio" name="questao03" value="C" required>Cubo
+        </label>
+        <label><input type="radio" id="0404" class="input-radio" name="questao03" value="D" required>Pirâmide</label>
+        <label><input type="radio" id="0405" class="input-radio" name="questao03" value="E" required>Esfera</label>
+      </div>
+
+      <input type="hidden" name="foo" id="foo">
+
+      <input type="submit" class="submit-button" id="submitButton" value="Enviar" onclick="SaveToFile()">
+    </form>
+  </body>
+</div>
+
+</html>
