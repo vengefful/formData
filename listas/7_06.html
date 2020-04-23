@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <script src="../js/SaveToFile.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <title>Lista de Matemática setimo ano</title>
+</head>
+<div class="container">
+  <header>
+    <h1 id="test" class="text-center">Lista de Matemática 06</h1>
+  </header>
+
+  <body>
+    <p class="text-center" id="serie">Série - 7\(^{\circ}\) ano do ensino fundamental II</p>
+    <form action="../cgi-bin/form.py" method="POST">
+      <div id="header_form" class="form-group">
+        <label id="name-label " for="name">Name*</label>
+        <div id="obrigatorio">* Campo obrigatório</div>
+        <input type="text" id="nameAluno" placeholder="Seu nome" required>
+        <label id="label-gender" for="gender">Gênero</label>
+        <p><input type="radio" class="input-radio" name="gender" value="masc">Masculino
+          <input type="radio" class="input-radio" name="gender" value="fem">Feminino
+          <input type="radio" class="input-radio" name="gender" value="other">Outro</p>
+      </div>
+      <div class="form-group">
+        <h2>Questão 01* <span>2,5 pontos</span></h2>
+        <!-- Primeira Questao -->
+        <p>
+          Uma formiguinha andou sobre a borda de uma régua, da marca 6 cm até a marcade 20 cm. Ela parou para descansar
+          na metade do caminho. Em que marca ela parou?
+        </p>
+        <label><input type="radio" id="0101" class="input-radio" name="questao00" value="A" required>11cm</label>
+        <label><input type="radio" id="0102" class="input-radio" name="questao00" value="B" required>12cm</label>
+        <label><input type="radio" id="0103" class="input-radio" name="questao00" value="C" required>13cm</label>
+        <label><input type="radio" id="0104" class="input-radio" name="questao00" value="D" required>14cm</label>
+        <label><input type="radio" id="0105" class="input-radio" name="questao00" value="E" required>15cm</label>
+      </div>
+      <div class="form-group">
+        <h2>Questão 02* <span>2,5 pontos</span></h2>
+        <!-- Segunda Questao -->
+        <p>
+          Dentre os números abaixo, aquele que é múltiplos de 4 e 7 é o:
+        </p>
+        <label><input type="radio" id="0201" class="input-radio" name="questao01" value="A" required>14</label>
+        <label><input type="radio" id="0202" class="input-radio" name="questao01" value="B" required>48</label>
+        <label><input type="radio" id="0203" class="input-radio" name="questao01" value="C" required>56</label>
+        <label><input type="radio" id="0204" class="input-radio" name="questao01" value="D" required>74</label>
+        <label><input type="radio" id="0205" class="input-radio" name="questao01" value="E" required>5</label>
+      </div>
+
+      <div class="form-group">
+        <h2>Questão 03* <span>2,5 pontos</span></h2>
+        <!-- Terceira Questao -->
+        <p>
+          Observe a reta numérica abaixo. Ela está dividida em segmentos de mesma medida.
+        </p>
+        <img src="http://matematicazup.com.br/wp-content/uploads/2016/02/prova-de-matematica-saerj-2014-16.png" alt="">
+        <p>Bessa reta, o ponto R representa o número:</p>
+        <label><input type="radio" id="0301" class="input-radio" name="questao02" value="A" required>-28</label>
+        <label><input type="radio" id="0302" class="input-radio" name="questao02" value="B" required>-26</label>
+        <label><input type="radio" id="0303" class="input-radio" name="questao02" value="C" required>-24</label>
+        <label><input type="radio" id="0304" class="input-radio" name="questao02" value="D" required>-22</label>
+        <label><input type="radio" id="0305" class="input-radio" name="questao02" value="E" required>-20</label>
+      </div>
+
+      <div class="form-group">
+        <h2>Questão 04* <span>2,5 pontos</span></h2>
+        <!-- Quarta Questao -->
+        <p>
+          O motorista do ônibus trocou R$ 7,00 por moedas de R$ 0,25. Quantas moedas ele recebeu?
+        </p>
+        <label><input type="radio" id="0401" class="input-radio" name="questao03" value="A" required>14</label>
+        <label><input type="radio" id="0402" class="input-radio" name="questao03" value="B" required>21</label>
+        <label><input type="radio" id="0403" class="input-radio" name="questao03" value="C" required>28</label>
+        <label><input type="radio" id="0404" class="input-radio" name="questao03" value="D" required>35</label>
+        <label><input type="radio" id="0405" class="input-radio" name="questao03" value="E" required>38</label>
+      </div>
+
+      <input type="hidden" name="foo" id="foo">
+
+      <input type="submit" class="submit-button" id="submitButton" value="Enviar" onclick="SaveToFile()">
+    </form>
+  </body>
+</div>
+
+</html>
