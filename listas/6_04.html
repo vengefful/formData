@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <script src="../js/SaveToFile.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <title>Lista de Matemática sexto ano</title>
+</head>
+<div class="container">
+  <header>
+    <h1 id="test" class="text-center">Lista de Matemática 07</h1>
+  </header>
+
+  <body>
+    <p class="text-center" id="serie">Série - 6\(^{\circ}\) ano do ensino fundamental II</p>
+    <p>
+      Atividade relacionada ao conteúdo de sequência numérica dos números naturais.
+    </p>
+    <!-- <p>Mais informações sobre o tema nos links abaixo:</p> -->
+    <!-- <object width="425" height="344" data="https://www.youtube.com/embed/N4koEPJ0bjU"></object> -->
+    <!-- <p><a -->
+    <!-- href="https://matematicauniban.files.wordpress.com/2012/04/metodologia-ef-3-conjunto-dos-nc3bameros-inteiros.pdf" -->
+    <!-- target="_blank" rel="noopener noreferrer">Apostila de Portenciação</a></p> -->
+    <!-- <p><a href="https://www.youtube.com/watch?v=zgbeiPutdn8" target="_blank" rel="noopener noreferrer">Vídeo 01</a></p> -->
+    <!-- <p><a href="https://www.youtube.com/watch?v=8Z_xmy94gz4" target="_blank" rel="noopener noreferrer">Vídeo 02</a></p> -->
+    <form action="../cgi-bin/form.py" method="POST">
+      <div id="header_form" class="form-group">
+        <label id="name-label " for="name">Name*</label>
+        <div id="obrigatorio">* Campo obrigatório</div>
+        <input type="text" id="nameAluno" placeholder="Seu nome" required>
+        <!-- <label id="labe-date" for="date">Data de Nascimento</label>
+        <input type="date"> -->
+        <label id="label-gender" for="gender">Gênero</label>
+        <p><input type="radio" class="input-radio" name="gender" value="masc">Masculino
+          <input type="radio" class="input-radio" name="gender" value="fem">Feminino
+          <input type="radio" class="input-radio" name="gender" value="other">Outro</p>
+      </div>
+      <div class="form-group">
+        <h2>Questão 01* <span>2,5 pontos</span></h2>
+        <!-- Primeira Questao -->
+        <p>
+          Em uma fábrica trabalham 245 operários. Se cada um deles ganha 560 reais, quantos reais a fábrica paga por mês
+          para todos os operários?
+        </p>
+        <label><input type="radio" id="0101" class="input-radio" name="questao00" value="A"
+            required>R$150.000,00</label>
+        <label><input type="radio" id="0102" class="input-radio" name="questao00" value="B"
+            required>R$130.200,00</label>
+        <label><input type="radio" id="0103" class="input-radio" name="questao00" value="C"
+            required>R$134.400,00</label>
+        <label><input type="radio" id="0104" class="input-radio" name="questao00" value="D"
+            required>R$138.800,00</label>
+        <label><input type="radio" id="0105" class="input-radio" name="questao00" value="E"
+            required>R$300.000,00</label>
+      </div>
+      <div class="form-group">
+        <h2>Questão 02* <span>2,5 pontos</span></h2>
+        <!-- Segunda Questao -->
+        <p>
+          Um canil possui 35 compartimentos para abrigar cães. Em cada um deles cabem 32 cães. Quantos cães podem ser
+          abrigados nesse canil?
+        </p>
+        <!-- <img src="../img/602_02.png" alt=""> -->
+        <label><input type="radio" id="0201" class="input-radio" name="questao01" value="A" required>1124</label>
+        <label><input type="radio" id="0202" class="input-radio" name="questao01" value="B" required>1120</label>
+        <label><input type="radio" id="0203" class="input-radio" name="questao01" value="C" required>1220</label>
+        <label><input type="radio" id="0204" class="input-radio" name="questao01" value="D" required>1020</label>
+        <label><input type="radio" id="0205" class="input-radio" name="questao01" value="E" required>1224</label>
+      </div>
+
+      <div class="form-group">
+        <h2>Questão 03* <span>2,5 pontos</span></h2>
+        <!-- Terceira Questao -->
+        <p>
+          orge herdou 340 pérolas de sua avó. Se cada pérola custa, em média, 2120 reais, quanto ele irá ganhar vendendo
+          todas as pérolas?
+        </p>
+        <img src="../img/604_01.jpg" alt="">
+        <label><input type="radio" id="0301" class="input-radio" name="questao02" value="A"
+            required>R$720.800,00</label>
+        <label><input type="radio" id="0302" class="input-radio" name="questao02" value="B" required>R$721.800,00
+        </label>
+        <label><input type="radio" id="0303" class="input-radio" name="questao02" value="C" required>R$722.800,00
+        </label>
+        <label><input type="radio" id="0304" class="input-radio" name="questao02" value="D" required>R$723.800,00
+        </label>
+        <label><input type="radio" id="0305" class="input-radio" name="questao02" value="E" required>R$724.800,00
+        </label>
+      </div>
+
+      <div class="form-group">
+        <h2>Questão 04* <span>2,5 pontos</span></h2>
+        <!-- Quarta Questao -->
+        <p>
+          O estacionamento de um supermercado tem a capacidade para 66 motos. Sabendo que todas as vagas estão ocupadas,
+          quantas rodas estão encostadas no chão?
+        </p>
+        <label><input type="radio" id="0401" class="input-radio" name="questao03" value="A" required>39 rodas</label>
+        <label><input type="radio" id="0402" class="input-radio" name="questao03" value="B" required>89 rodas</label>
+        <label><input type="radio" id="0403" class="input-radio" name="questao03" value="C" required>102 rodas
+        </label>
+        <label><input type="radio" id="0404" class="input-radio" name="questao03" value="D" required>132 rodas</label>
+        <label><input type="radio" id="0405" class="input-radio" name="questao03" value="E" required>165 rodas</label>
+      </div>
+
+      <input type="hidden" name="foo" id="foo">
+
+      <input type="submit" class="submit-button" id="submitButton" value="Enviar" onclick="SaveToFile()">
+    </form>
+  </body>
+</div>
+
+</html>
