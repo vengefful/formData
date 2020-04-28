@@ -85,5 +85,5 @@ for filename in basename:
 for k in range(len(html)):
     html[k] += """\n</body></html>\n"""
     with open(nameHtmlFile[k], 'w') as f:
-        f.write(html[k].format('../'+ nameFigFile))
+        f.write(html[k])
     
