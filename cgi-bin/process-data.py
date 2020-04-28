@@ -8,6 +8,10 @@ img_folder = '../img/'
 acertos_folder = '../listas/acertos/'
 basename = []
 nameHtmlFile = []
+lista6 = []
+lista7 = []
+lista9 = []
+htmlNav = ["<nav>\n", "<nav>\n", "<nav>\n"]
 html = ["", "", ""]
 html_header = """<!DOCTYPE html>
     <html lang="pt-br">
@@ -15,6 +19,7 @@ html_header = """<!DOCTYPE html>
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/acertos.css">
     <title>Lista de Matemática</title>
     </head>
 
@@ -52,12 +57,14 @@ for filename in basename:
     print(filename)
     if(serie == '9'):
         j = 2
+        lista9.append(lista)
     elif(serie == '7'):
         j = 1
+        lista7.append(lista)
     else:
         j = 0
-    print(j)
-    html[j] += f"<h1>Lista de Matemática - {lista}: Acertos</h1>\n"
+        lista6.append(lista)
+    html[j] += """<h1 id="{0}">Lista de Matemática - {1}: Acertos</h1>\n""".format(lista, lista)
     html[j] += data.to_html()
 
     acerto = {'Acertos': [0, 0, 0, 0, 0]}
@@ -82,8 +89,21 @@ for filename in basename:
     html[j] += """\n<img src="{0}" alt="graph" height="100%" width="100%">""".format('../' + nameFigFile)
     i += 1
 
+for id in lista6:
+    htmlNav[0] += """<a href="#{0}">Lista {1}</a>\n""".format(id, id)
+htmlNav[0] += "</nav>\n"
+
+for id in lista7:
+    htmlNav[1] += """<a href="#{0}">Lista {1}</a>\n""".format(id, id)
+htmlNav[1] += "</nav>\n"
+
+for id in lista9:
+    htmlNav[2] += """<a href="#{0}">Lista {1}</a>\n""".format(id, id)
+htmlNav[2] += "</nav>\n"
+
+
 for k in range(len(html)):
-    html[k] += """\n</body></html>\n"""
+    html[k] += "\n</body>\n" + htmlNav[k] + "</html>\n"
     with open(nameHtmlFile[k], 'w') as f:
         f.write(html[k])
     
