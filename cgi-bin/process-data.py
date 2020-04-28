@@ -86,7 +86,7 @@ for filename in basename:
     
     plt.savefig(nameFigFile)
 
-    html[j] += """\n<img src="{0}" alt="graph" height="100%" width="100%">""".format('../' + nameFigFile)
+    html[j] += """\n<img src="{0}" alt="graph" height="100%" width="100%">\n""".format('../' + nameFigFile)
     i += 1
 
 for id in lista6:
