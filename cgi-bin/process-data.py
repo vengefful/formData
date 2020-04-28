@@ -23,6 +23,9 @@ html_header = """<!DOCTYPE html>
 for files in os.listdir(json_folder):
     basename.append(files)
 
+basename.sort()
+print(basename)
+
 html[0] = html_header
 html[1] = html_header
 html[2] = html_header
