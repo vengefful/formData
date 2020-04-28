@@ -49,6 +49,7 @@ for filename in basename:
     
     nameFigFile = os.path.join(img_folder, base) + '.png'
 
+    print(filename)
     if(serie == '9'):
         j = 2
     elif(serie == '7'):
