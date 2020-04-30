@@ -81,12 +81,12 @@ for filename in basename:
             acerto['Acertos'][4] += 1
 
     df = pd.DataFrame(acerto,columns=['Acertos'],index = ['0 acertos','1 acerto','2 acertos','3 acertos','4 acertos'])
-    df.plot.pie(subplots=True, figsize=(12, 12),autopct='%1.1f%%', startangle=0)
-    plt.title('Gráfico de Acertos')
+    #  df.plot.pie(subplots=True, figsize=(12, 12),autopct='%1.1f%%', startangle=0)
+    #  plt.title('Gráfico de Acertos')
     
-    plt.savefig(nameFigFile)
+    #  plt.savefig(nameFigFile)
 
-    html[j] += """\n<img src="{0}" alt="graph" height="100%" width="100%">\n""".format('../' + nameFigFile)
+    #  html[j] += """\n<img src="{0}" alt="graph" height="100%" width="100%">\n""".format('../' + nameFigFile)
     i += 1
 
 for id in lista6:
